@@ -1,0 +1,25 @@
+.notfound {
+    align-items: center;
+    text-align: center;
+    color: #ff6060;
+}
+
+.notfound h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0px;
+}
+
+.notfound h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.notfound p a {
+    text-decoration: none !important;
+    font-size: 18px;
+}
