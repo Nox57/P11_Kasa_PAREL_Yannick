@@ -1,0 +1,42 @@
+.collapse-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapse-item {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+.collapse-item button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #ff6060;
+    color: white;
+    border: none;
+    text-align: left;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+.collapse-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.collapse-content {
+    margin-top: 10px;
+    color: #ff6060;
+    font-family: 'Montserrat';
+}
