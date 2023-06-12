@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 100px;
+    background: #f7f7f7;
+    border-radius: 25px;
 }
 
 .card {

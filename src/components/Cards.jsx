@@ -24,7 +24,7 @@ function Cards() {
                         backgroundSize: 'cover',
                     }}
                 >
-                    <Link to="/">
+                    <Link to={`/accomodation/${Card.id}`}>
                         <h2>{Card.title}</h2>
                     </Link>
                 </div>
