@@ -1,13 +1,87 @@
 import { useParams } from 'react-router-dom'
-// useLoaderData
+import accomodationsData from '../datas/logements.json'
 import '../styles/Accomodation.css'
+import star from '../assets/star.svg'
+import star_filled from '../assets/star_filled.svg'
 
 function Accomodation() {
     let { id } = useParams()
 
+    const accomodation = accomodationsData.find((item) => item.id === id)
+
+    if (!accomodation) {
+        // Gestion à prévoir dans les Routes
+    }
+
+    const {
+        title,
+        pictures,
+        description,
+        host,
+        rating,
+        location,
+        equipments,
+        tags,
+    } = accomodation
+
+    // Fonction pour générer les étoiles en fonction du rating
+    const renderStars = () => {
+        const stars = []
+
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                stars.push(<img src={star_filled} alt="etoiles" />)
+            } else {
+                stars.push(<img src={star} alt="etoiles" />)
+            }
+        }
+
+        return stars
+    }
+
     return (
         <div className="accomodation">
-            <p>{id}</p>
+            {pictures && pictures.length > 0 && (
+                <div className="carrousel-container">
+                    {pictures.map((picture, index) => (
+                        <img key={index} src={picture} alt={'Hébergement'} />
+                    ))}
+                </div>
+            )}
+
+            <div className="title-container">
+                <div>
+                    <h1>{title}</h1>
+                    <p>{location}</p>
+                </div>
+                <div className="host-container">
+                    <span>{host.name}</span>
+                    <img src={host.picture} alt="Host" />
+                </div>
+            </div>
+
+            <div className="tags_rating_container">
+                <div>
+                    {tags.map((tag, index) => (
+                        <span key={index}>{tag}</span>
+                    ))}
+                </div>
+                <div>{renderStars()}</div>
+            </div>
+
+            <div className="description-container">
+                <h3>Description</h3>
+                <p>{description}</p>
+            </div>
+
+            <div className="equipements-container">
+                <h3>Equipements</h3>
+                <p>
+                    {equipments.map((equipment, index) => (
+                        <li key={index}>{equipment}</li>
+                    ))}
+                </p>
+            </div>
         </div>
     )
 }

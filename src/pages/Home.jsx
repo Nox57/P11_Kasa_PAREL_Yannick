@@ -1,5 +1,5 @@
 import Banner from '../components/Banner'
-import Cards from '../components/Cards'
+import Gallery from '../components/Gallery'
 import '../styles/Home.css'
 import bannerImg from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.png'
 
@@ -10,7 +10,7 @@ function Home() {
                 imageLink={bannerImg}
                 title="Chez vous, partout et ailleurs"
             />
-            <Cards />
+            <Gallery />
         </div>
     )
 }

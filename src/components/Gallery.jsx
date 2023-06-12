@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import jsonData from '../datas/logements.json'
 import '../styles/Cards.css'
 
-function Cards() {
+function Gallery() {
     const [cardsData, setCardData] = useState([])
 
     useEffect(() => {
@@ -33,4 +33,4 @@ function Cards() {
     )
 }
 
-export default Cards
+export default Gallery
