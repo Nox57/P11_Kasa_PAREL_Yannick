@@ -8,7 +8,15 @@ function About() {
     return (
         <div className="about">
             <Banner imageLink={bannerImg} />
-            <Collapse data={aboutData} />
+            {aboutData.map((item) => {
+                return (
+                    <Collapse
+                        key={item.id}
+                        title={item.title}
+                        content={item.content}
+                    />
+                )
+            })}
         </div>
     )
 }
