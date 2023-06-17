@@ -67,19 +67,22 @@
 .tags_rating_container span {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 100;
     font-size: 14px;
-    line-height: 142.6%;
+    line-height: 20px;
     text-align: center;
     color: #ffffff;
     background: #ff6060;
     border-radius: 10px;
-    padding: 10px 40px;
+    padding: 3px 40px 2px 40px;
     margin-right: 10px;
+    height: 25px;
 }
 
 .description-container {
+    max-width: 582px;
 }
 
 .equipements-container {
+    max-width: 582px;
 }

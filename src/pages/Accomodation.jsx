@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import accomodationsData from '../datas/logements.json'
+import Collapse from '../components/Collapse'
 import '../styles/Accomodation.css'
 import star from '../assets/star.svg'
 import star_filled from '../assets/star_filled.svg'
@@ -70,17 +71,16 @@ function Accomodation() {
             </div>
 
             <div className="description-container">
-                <h3>Description</h3>
-                <p>{description}</p>
+                <Collapse title="Description" content={description} />
             </div>
 
             <div className="equipements-container">
-                <h3>Equipements</h3>
-                <p>
-                    {equipments.map((equipment, index) => (
+                <Collapse
+                    title="Équipements"
+                    content={equipments.map((equipment, index) => (
                         <li key={index}>{equipment}</li>
                     ))}
-                </p>
+                />
             </div>
         </div>
     )
