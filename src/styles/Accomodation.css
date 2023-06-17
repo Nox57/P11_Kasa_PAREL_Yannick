@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .title-container h1 {
@@ -58,10 +62,11 @@
 }
 
 .tags_rating_container {
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .tags_rating_container span {
@@ -81,8 +86,10 @@
 
 .description-container {
     max-width: 582px;
+    margin-left: 100px;
 }
 
 .equipements-container {
     max-width: 582px;
+    margin-left: 100px;
 }

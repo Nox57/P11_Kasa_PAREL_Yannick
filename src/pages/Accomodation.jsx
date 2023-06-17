@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import accomodationsData from '../datas/logements.json'
 import Collapse from '../components/Collapse'
+import Carrousel from '../components/Carrousel'
 import '../styles/Accomodation.css'
 import star from '../assets/star.svg'
 import star_filled from '../assets/star_filled.svg'
@@ -44,9 +45,7 @@ function Accomodation() {
         <div className="accomodation">
             {pictures && pictures.length > 0 && (
                 <div className="carrousel-container">
-                    {pictures.map((picture, index) => (
-                        <img key={index} src={picture} alt={'Hébergement'} />
-                    ))}
+                    <Carrousel images={pictures} />
                 </div>
             )}
 
