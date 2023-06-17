@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import accomodationsData from '../datas/logements.json'
 import Collapse from '../components/Collapse'
 import Carrousel from '../components/Carrousel'
@@ -12,7 +12,7 @@ function Accomodation() {
     const accomodation = accomodationsData.find((item) => item.id === id)
 
     if (!accomodation) {
-        // Gestion à prévoir dans les Routes
+        return <Navigate to="/404" />
     }
 
     const {
