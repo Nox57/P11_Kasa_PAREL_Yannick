@@ -18,6 +18,7 @@ function Carrousel({ images }) {
     }
 
     const showArrows = images.length > 1
+    const imageCounter = `${index + 1}/${images.length}`
 
     return (
         <div className="carrousel-container">
@@ -34,6 +35,9 @@ function Carrousel({ images }) {
                         onClick={handlePrevious}
                         alt="Voir la représentation précédente"
                     />
+                    <span className="carrousel-image-counter">
+                        {imageCounter}
+                    </span>
                     <img
                         className="carrousel-controls-next"
                         src={arrowNext}

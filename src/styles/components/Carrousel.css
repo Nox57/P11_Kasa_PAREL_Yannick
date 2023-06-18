@@ -37,3 +37,16 @@
     right: 25px;
     transform: translateY(-50%);
 }
+
+.carrousel-image-counter {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+}
