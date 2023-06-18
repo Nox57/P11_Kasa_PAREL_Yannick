@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import jsonData from '../datas/logements.json'
-import '../styles/Cards.css'
+import '../styles/components/Gallery.css'
 
 function Gallery() {
     const [cardsData, setCardData] = useState([])

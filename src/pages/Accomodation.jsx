@@ -1,8 +1,8 @@
 import { useParams, Navigate } from 'react-router-dom'
 import accomodationsData from '../datas/logements.json'
+import '../styles/pages/Accomodation.css'
 import Collapse from '../components/Collapse'
 import Carrousel from '../components/Carrousel'
-import '../styles/Accomodation.css'
 import star from '../assets/star.svg'
 import star_filled from '../assets/star_filled.svg'
 
@@ -66,20 +66,22 @@ function Accomodation() {
                         <span key={index}>{tag}</span>
                     ))}
                 </div>
-                <div>{renderStars()}</div>
+                <div className="rating">{renderStars()}</div>
             </div>
 
-            <div className="description-container">
-                <Collapse title="Description" content={description} />
-            </div>
+            <div className="dropdowns">
+                <div className="description-container">
+                    <Collapse title="Description" content={description} />
+                </div>
 
-            <div className="equipements-container">
-                <Collapse
-                    title="Équipements"
-                    content={equipments.map((equipment, index) => (
-                        <li key={index}>{equipment}</li>
-                    ))}
-                />
+                <div className="equipements-container">
+                    <Collapse
+                        title="Équipements"
+                        content={equipments.map((equipment, index) => (
+                            <li key={index}>{equipment}</li>
+                        ))}
+                    />
+                </div>
             </div>
         </div>
     )

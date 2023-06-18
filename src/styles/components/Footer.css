@@ -3,23 +3,23 @@ footer {
     color: white;
     text-align: center;
     height: 210px;
-  }
-  
-  .footer-image-container {
+}
+
+.footer-image-container {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-  }
-  
-  .footer-image-container img {
+}
+
+.footer-image-container img {
     max-width: 100%;
     height: auto;
     margin-top: 66px;
-  }
-  
-  p {
+}
+
+p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 24px;
-  }
+}

@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types'
 import { useState } from 'react'
 import arrowPrevious from '../assets/carrousel-previous.svg'
 import arrowNext from '../assets/carrousel-next.svg'
-import '../styles/Carrousel.css'
+import '../styles/components/Carrousel.css'
 
 function Carrousel({ images }) {
     const [index, setIndex] = useState(0)

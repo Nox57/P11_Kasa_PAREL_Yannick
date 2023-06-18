@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-import '../styles/Collapse.css'
+import '../styles/components/Collapse.css'
 import arrow_down from '../assets/arrow_down.svg'
 import arrow_up from '../assets/arrow_up.svg'
 

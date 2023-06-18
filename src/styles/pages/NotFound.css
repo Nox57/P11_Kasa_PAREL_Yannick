@@ -2,6 +2,8 @@
     align-items: center;
     text-align: center;
     color: #ff6060;
+    padding-bottom: 150px;
+    padding-top: 100px;
 }
 
 .notfound h1 {
@@ -15,11 +17,14 @@
 .notfound h2 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 36px;
 }
 
 .notfound p a {
-    text-decoration: none !important;
+    font-weight: 300;
     font-size: 18px;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+    color: #ff6060;
 }

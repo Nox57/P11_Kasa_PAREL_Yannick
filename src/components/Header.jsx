@@ -1,6 +1,6 @@
-import '../styles/Header.css'
+import '../styles/components/Header.css'
 import logo from '../assets/logo.svg'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
     return (
@@ -12,8 +12,7 @@ function Header() {
             </div>
             <nav className="menu">
                 <NavLink to="/">Accueil</NavLink>
-                <NavLink to="/about">A propos</NavLink>
-                <Link to="/ergoprkgor">Test 404</Link>
+                <NavLink to="/about">A Propos</NavLink>
             </nav>
         </header>
     )

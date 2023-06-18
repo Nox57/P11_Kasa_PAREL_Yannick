@@ -1,6 +1,6 @@
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
-import '../styles/Home.css'
+import '../styles/pages/Home.css'
 import bannerImg from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.png'
 
 function Home() {

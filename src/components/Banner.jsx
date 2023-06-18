@@ -1,4 +1,4 @@
-import '../styles/Banner.css'
+import '../styles/components/Banner.css'
 
 function Banner(props) {
     const { imageLink, title } = props
