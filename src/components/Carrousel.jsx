@@ -17,6 +17,8 @@ function Carrousel({ images }) {
         setIndex(previousIndex)
     }
 
+    const showArrows = images.length > 1
+
     return (
         <div className="carrousel-container">
             <img
@@ -24,20 +26,22 @@ function Carrousel({ images }) {
                 src={images[index]}
                 alt={`Représentation ${index + 1} du logement`}
             />
-            <div className="carrousel-controls">
-                <img
-                    className="carrousel-controls-previous"
-                    src={arrowPrevious}
-                    onClick={handlePrevious}
-                    alt="Voir la représentation précédente"
-                />
-                <img
-                    className="carrousel-controls-next"
-                    src={arrowNext}
-                    onClick={handleNext}
-                    alt="Voir la représentation suivante"
-                />
-            </div>
+            {showArrows && (
+                <div className="carrousel-controls">
+                    <img
+                        className="carrousel-controls-previous"
+                        src={arrowPrevious}
+                        onClick={handlePrevious}
+                        alt="Voir la représentation précédente"
+                    />
+                    <img
+                        className="carrousel-controls-next"
+                        src={arrowNext}
+                        onClick={handleNext}
+                        alt="Voir la représentation suivante"
+                    />
+                </div>
+            )}
         </div>
     )
 }
