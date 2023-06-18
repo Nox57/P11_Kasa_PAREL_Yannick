@@ -2,6 +2,8 @@ import '../styles/pages/NotFound.css'
 import { Link } from 'react-router-dom'
 
 function NotFound() {
+    document.title = 'Kasa - Erreur 404'
+
     return (
         <div className="notfound">
             <h1>404</h1>

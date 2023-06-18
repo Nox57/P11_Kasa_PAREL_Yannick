@@ -5,6 +5,8 @@ import '../styles/pages/About.css'
 import bannerImg from '../assets/about.svg'
 
 function About() {
+    document.title = 'Kasa - A Propos'
+
     return (
         <div className="about">
             <Banner imageLink={bannerImg} />

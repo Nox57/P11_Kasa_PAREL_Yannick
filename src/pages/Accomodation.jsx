@@ -15,6 +15,8 @@ function Accomodation() {
         return <Navigate to="/404" />
     }
 
+    document.title = `Kasa - ${accomodation.title}`
+
     const {
         title,
         pictures,
