@@ -34,9 +34,9 @@ function Accomodation() {
 
         for (let i = 1; i <= 5; i++) {
             if (i <= rating) {
-                stars.push(<img src={star_filled} alt="etoiles" />)
+                stars.push(<img key={i} src={star_filled} alt="etoile" />)
             } else {
-                stars.push(<img src={star} alt="etoiles" />)
+                stars.push(<img key={i} src={star} alt="etoile vide" />)
             }
         }
 
