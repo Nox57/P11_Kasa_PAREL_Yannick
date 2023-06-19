@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import logementsData from './datas/logements.json'
 import './styles/index.css'
 import Header from './components/Header'
 import Home from './pages/Home'
@@ -9,6 +10,8 @@ import Accomodation from './pages/Accomodation'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
+
+export const LogementsContext = React.createContext(logementsData)
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

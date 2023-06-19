@@ -1,5 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
-import accomodationsData from '../datas/logements.json'
+import { useContext } from 'react'
+import { LogementsContext } from '../index'
 import '../styles/pages/Accomodation.css'
 import Collapse from '../components/Collapse'
 import Carrousel from '../components/Carrousel'
@@ -8,8 +9,9 @@ import star_filled from '../assets/star_filled.svg'
 
 function Accomodation() {
     let { id } = useParams()
+    const logementsData = useContext(LogementsContext)
 
-    const accomodation = accomodationsData.find((item) => item.id === id)
+    const accomodation = logementsData.find((item) => item.id === id)
 
     if (!accomodation) {
         return <Navigate to="/404" />

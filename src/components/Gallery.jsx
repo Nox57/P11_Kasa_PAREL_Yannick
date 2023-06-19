@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { LogementsContext } from '../index'
 import { Link } from 'react-router-dom'
-import jsonData from '../datas/logements.json'
 import '../styles/components/Gallery.css'
 
 function Gallery() {
+    const logementsData = useContext(LogementsContext)
+
     const [cardsData, setCardData] = useState([])
 
     useEffect(() => {
-        setCardData(jsonData)
-    }, [])
+        setCardData(logementsData)
+    }, [logementsData])
 
     return (
         <div className="cards-container">
