@@ -1,3 +1,26 @@
 .about {
     padding-bottom: 100px;
 }
+
+.about-collapses {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-collapses {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about {
+        padding-bottom: 50px;
+    }
+
+    .about-collapses {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}

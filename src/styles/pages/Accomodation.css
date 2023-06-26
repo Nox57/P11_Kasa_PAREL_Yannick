@@ -104,3 +104,43 @@
 .equipements-container {
     width: 582px;
 }
+
+@media only screen and (max-width: 768px) {
+    .title-container,
+    .host-container,
+    .tags_rating_container,
+    .dropdowns {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .description-container,
+    .equipements-container {
+        width: 100%;
+    }
+
+    .title-container h1 {
+        font-size: 24px;
+    }
+
+    .title-container p,
+    .host-container span {
+        font-size: 16px;
+    }
+
+    .host-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tags_rating_container span {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 2px 20px;
+    }
+
+    .rating img {
+        padding-left: 10px;
+    }
+}

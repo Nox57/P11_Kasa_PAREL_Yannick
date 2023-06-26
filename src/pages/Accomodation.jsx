@@ -1,4 +1,4 @@
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useContext } from 'react'
 import { LogementsContext } from '../index'
 import '../styles/pages/Accomodation.css'
@@ -6,6 +6,7 @@ import Collapse from '../components/Collapse'
 import Carrousel from '../components/Carrousel'
 import star from '../assets/star.svg'
 import star_filled from '../assets/star_filled.svg'
+import NotFound from './NotFound'
 
 function Accomodation() {
     let { id } = useParams()
@@ -14,7 +15,7 @@ function Accomodation() {
     const accomodation = logementsData.find((item) => item.id === id)
 
     if (!accomodation) {
-        return <Navigate to="/404" />
+        return <NotFound />
     }
 
     document.title = `Kasa - ${accomodation.title}`

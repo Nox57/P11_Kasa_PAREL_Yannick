@@ -50,3 +50,29 @@
     line-height: 26px;
     color: #ffffff;
 }
+
+@media only screen and (max-width: 768px) {
+    .carrousel-container {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .carrousel-controls-previous,
+    .carrousel-controls-next {
+        width: 30px;
+        height: 50px;
+    }
+
+    .carrousel-controls-previous {
+        left: 15px;
+    }
+
+    .carrousel-controls-next {
+        right: 15px;
+    }
+
+    .carrousel-image-counter {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

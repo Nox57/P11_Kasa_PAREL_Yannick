@@ -26,3 +26,37 @@
     bottom: 0;
     color: #ffffff;
 }
+
+@media only screen and (max-width: 768px) {
+    .cards-container {
+        margin: 50px;
+        padding: 30px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .cards-container {
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        background-color: #ffffff;
+        gap: 0px;
+    }
+}
