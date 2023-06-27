@@ -1,8 +1,14 @@
-.accomodation {
+.accomodation-container {
     margin-bottom: 100px;
 }
 
-.title-container {
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +18,7 @@
     margin-bottom: 20px;
 }
 
-.title-container h1 {
+.title-wrapper h1 {
     margin: 0;
     font-family: 'Montserrat';
     font-style: normal;
@@ -23,7 +29,7 @@
     color: #ff6060;
 }
 
-.title-container p {
+.title-wrapper p {
     margin: 0;
     margin-top: 10px;
     font-family: 'Montserrat';
@@ -35,25 +41,18 @@
     color: #ff6060;
 }
 
-.host-container {
-    display: flex;
-    align-items: center;
+.host-info-wrapper {
+    min-width: 300px;
 }
 
-.host-container span {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+.host-details {
+    margin-right: 100px;
     display: flex;
-    align-items: flex-end;
-    text-align: right;
-    color: #ff6060;
-    margin-right: 10px;
-    max-width: 90px;
+    justify-content: end;
+    margin-bottom: 20px;
 }
 
-.host-container img {
+.host-details img {
     border-radius: 50%;
     width: 64px;
     height: 64px;
@@ -61,15 +60,24 @@
     margin-bottom: 5px;
 }
 
-.tags_rating_container {
+.host-details span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
+    text-align: right;
+    color: #ff6060;
+    margin-right: 10px;
+    max-width: 90px;
+}
+
+.tags-wrapper {
     margin-left: 100px;
 }
 
-.tags_rating_container span {
+.tags-wrapper span {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 100;
@@ -84,7 +92,12 @@
     height: 25px;
 }
 
-.rating img {
+.rating-wrapper {
+    margin-right: 100px;
+    text-align: right;
+}
+
+.rating-wrapper img {
     padding-left: 15px;
 }
 
@@ -107,41 +120,87 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .title-container,
-    .host-container,
-    .tags_rating_container,
-    .dropdowns {
+    .accomodation-container {
+        margin-bottom: 50px;
+    }
+
+    .info-container,
+    .title-wrapper,
+    .host-details {
+        display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+
+    .dropdowns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 0px;
+        gap: 0px;
+    }
+
+    .title-wrapper h1 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .title-wrapper p,
+    .host-details span {
+        font-size: 14px;
+    }
+
+    .host-info-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .host-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .host-details img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .tags-wrapper {
+        margin-left: 10px;
+    }
+
+    .tags-wrapper span {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 3px 15px 2px 15px;
+        height: 20px;
+    }
+
+    .rating-wrapper {
+        margin-right: 0px;
+    }
+
+    .rating-wrapper img {
+        height: 18px;
+        padding-left: 0px;
+        padding-right: 5px;
     }
 
     .description-container,
     .equipements-container {
         width: 100%;
-    }
-
-    .title-container h1 {
-        font-size: 24px;
-    }
-
-    .title-container p,
-    .host-container span {
-        font-size: 16px;
-    }
-
-    .host-container img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .tags_rating_container span {
-        font-size: 12px;
-        line-height: 18px;
-        padding: 2px 20px;
-    }
-
-    .rating img {
-        padding-left: 10px;
     }
 }

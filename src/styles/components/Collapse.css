@@ -14,7 +14,7 @@
     font-family: 'Montserrat';
 }
 
-.accomodation .collapse-item button {
+.accomodation-container .collapse-item button {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -29,6 +29,36 @@
     font-weight: 300;
     padding: 10px;
     font-family: 'Montserrat';
+}
+
+.accomodation-container .collapse-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.accomodation-container .collapse-content {
+    padding: 20px;
+    color: #ff6060;
+    background: #f7f7f7;
+    font-style: normal;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 26px;
+    font-weight: 100;
+}
+
+.accomodation-container .collapse-content li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .accomodation-container .collapse-item button {
+        font-size: 13px;
+    }
+
+    .accomodation-container .collapse-content {
+        font-size: 12px;
+    }
 }
 
 .about .collapse-item button {
@@ -48,31 +78,11 @@
     font-family: 'Montserrat';
 }
 
-.accomodation .collapse-item img {
-    width: 20px;
-    height: 20px;
-}
-
 .about .collapse-item img {
     width: 20px;
     height: 20px;
     margin-top: 5px;
     margin-right: 18px;
-}
-
-.accomodation .collapse-content {
-    padding: 20px;
-    color: #ff6060;
-    background: #f7f7f7;
-    font-style: normal;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 26px;
-    font-weight: 100;
-}
-
-.accomodation .collapse-content li {
-    list-style: none;
 }
 
 .about .collapse-content {

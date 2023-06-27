@@ -1,8 +1,8 @@
 .carrousel-container {
     position: relative;
-    max-width: 1240px;
     height: 415px;
-    margin: 0 auto;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .carrousel-image {
@@ -55,6 +55,8 @@
     .carrousel-container {
         height: 255px;
         border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .carrousel-controls-previous,

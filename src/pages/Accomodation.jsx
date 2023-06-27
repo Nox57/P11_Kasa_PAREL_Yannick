@@ -47,31 +47,43 @@ function Accomodation() {
     }
 
     return (
-        <div className="accomodation">
+        <div className="accomodation-container">
             {pictures && pictures.length > 0 && (
                 <div className="carrousel-container">
                     <Carrousel images={pictures} />
                 </div>
             )}
 
-            <div className="title-container">
-                <div>
-                    <h1>{title}</h1>
-                    <p>{location}</p>
-                </div>
-                <div className="host-container">
-                    <span>{host.name}</span>
-                    <img src={host.picture} alt="Host" />
-                </div>
-            </div>
+            <div className="info-container">
+                <div className="accomodation-info-wrapper">
+                    <div className="title-wrapper">
+                        <div>
+                            <h1>{title}</h1>
+                            <p>{location}</p>
+                        </div>
+                    </div>
 
-            <div className="tags_rating_container">
-                <div>
-                    {tags.map((tag, index) => (
-                        <span key={index}>{tag}</span>
-                    ))}
+                    <div className="tags-wrapper">
+                        <div>
+                            {tags.map((tag, index) => (
+                                <span key={index} className="tag">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-                <div className="rating">{renderStars()}</div>
+
+                <div className="host-info-wrapper">
+                    <div className="host-details">
+                        <span>{host.name}</span>
+                        <img src={host.picture} alt="Host" />
+                    </div>
+
+                    <div className="rating-wrapper">
+                        <div className="rating">{renderStars()}</div>
+                    </div>
+                </div>
             </div>
 
             <div className="dropdowns">
