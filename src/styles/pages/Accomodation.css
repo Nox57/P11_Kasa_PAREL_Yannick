@@ -90,6 +90,7 @@
     padding: 3px 30px 2px 30px;
     margin-right: 10px;
     height: 25px;
+    white-space: nowrap;
 }
 
 .rating-wrapper {
